@@ -23,6 +23,20 @@ while True:
 a,b=map(int,input().split())
 print(['><'[a<b],'=='][a==b])
 
+# 연습하기
+# 조건부 표현식 이해
+print('><qwer'[0])
+a , b, c = map(int, input().split(','))
+print(['fwq','eqwf'][a<b])
+print(a,b)
+
+# 4가지조건 : 참일땐 1
+print([["><"[a>b],"="][a==b],'a<c'][a<c])
+print(['a','b','c'][c-1]) # << 이런 인덱스원리.
+
+
+# 설명
+
 # a, b = map(int, input().split()): 사용자로부터 입력받은 문자열을 공백으로 분리한 후, 각각의 부분을 정수로 변환하여 a와 b에 할당합니다.
 
 # ['><'[a<b], '=='][a==b]: 이 부분은 조금 복잡해 보이지만, 단계별로 분해하면 이해하기 쉽습니다.
