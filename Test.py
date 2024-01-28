@@ -1,9 +1,17 @@
+# 복습
 # 조건부 표현식 이해
-print('><qwer'[0])
-a , b, c = map(int, input().split(','))
-print(['fwq','eqwf'][a<b])
-print(a,b)
 
-# 4가지조건 : 참일땐 1
-print([["><"[a>b],"="][a==b],'a<c'][a<c])
-print(['a','b','c'][c-1]) # << 이런 인덱스원리.
+a,b = map(int, input().split())
+print(['><'[a<b],'='][a==b])
+
+# 별찍기, 오른쪽정렬
+n = int(input())
+[print(('*'*(i+1)).rjust(n)) for i in range(n)]
+
+# Comprehension 숏코딩
+num=int(input())
+[print(('*'*(i+1)).rjust(num)) for i in range(num)]
+
+# 최소최대
+n, num = int(input()), list(map(int,input().split()))
+print(min(num),max(num))
