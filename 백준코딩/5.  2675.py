@@ -14,7 +14,7 @@
 
 # 내 답
 n = int(input())
-for _ in range(n):
+for _ in range(n): # 여기 꼭 범위로 range써줘야함
     num, text = input().split(' ',1)
     a = [i*int(num) for i in text]
     print(''.join(a))
