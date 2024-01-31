@@ -19,6 +19,12 @@ for _ in range(n): # 여기 꼭 범위로 range써줘야함
     a = [i*int(num) for i in text]
     print(''.join(a))
 
+# 다른방법 join안쓰는법
+n = int(input())
+for _ in range(n):
+    num, text = input().split()
+    [ print(i*int(num),end='') for i in text]  # end='' 옆으로 붙임
+    print()
 
 # 정답
 n = int(input())

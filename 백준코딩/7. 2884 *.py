@@ -23,7 +23,7 @@ print(last_hour,last_minute)
 
 # 숏 코딩
 a,b=map(int,input().split())
-print((a-(b<45))%24,(b-45)%60)
+print((a-(b<45))%24,(b-45)%60) # 키포인트는 (b<45)이 참이면 1 거짓이면 0출력되는원리
 
 # 수식기호 
 # //몫, /나누기(소수출력), %나머지
