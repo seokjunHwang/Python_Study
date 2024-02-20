@@ -1,17 +1,13 @@
 # 복습
 # 조건부 표현식 이해
 
-a,b = map(int, input().split())
-print(['><'[a<b],'='][a==b])
+# numbers = [1, 2, 3]
+# letters = ['a', 'b', 'c']
+# zipped = zip(numbers, letters)  # zip 객체를 생성합니다.
+# # zipped_list = list(zipped)  # zip 객체를 리스트로 변환합니다.
+# print(zipped) # 출력 : <zip object at 0x1018ba300>
+# print(*max(zipped),sep='\n')
+# # print(zipped_list)  # 출력: [(1, 'a'), (2, 'b'), (3, 'c')]
 
-# 별찍기, 오른쪽정렬
-n = int(input())
-[print(('*'*(i+1)).rjust(n)) for i in range(n)]
+print(*max((int(input()), i+1) for i in range(9)))
 
-# Comprehension 숏코딩
-num=int(input())
-[print(('*'*(i+1)).rjust(num)) for i in range(num)]
-
-# 최소최대
-n, num = int(input()), list(map(int,input().split()))
-print(min(num),max(num))
