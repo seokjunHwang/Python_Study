@@ -9,10 +9,10 @@
 # 출력
 # 첫째 줄에 최댓값을 출력하고, 둘째 줄에 최댓값이 몇 번째 수인지를 출력한다.
 
-# a = []
-# for _ in range(9):
-#     a.append(int(input()))
-# print(max(a),1+a.index(max(a)),sep='\n') 
+a = []
+for _ in range(9):
+    a.append(int(input()))
+print(max(a),1+a.index(max(a)),sep='\n') 
 
 # sep : 각 인자사이에 ''안의것을 넣음
 
@@ -22,7 +22,10 @@ print(max(a),1+a.index(max(a)),sep='\n')
 
 # 다른숏코딩
 print(*max((int(input()), i+1) for i in range(9)),sep='\n')
-# zip형태와 같게 튜플형식의 이터레이블 구조를 만들어주기 위해
+
+# zip,*,sep의 이해
+# zip형태와 같게 튜플형식의 이터레이블 구조를 만들어주기 위해 
+# zip형태 : (ㄱ, 1),(ㄴ,2),(ㄷ,3),...
 # (int(input()), i+1) for i in range(9))로 마지막에 ()를 감쌋다.
 # (정수,인덱스)형태의 튜플형태요소가 여럿있는 이터레이블 구조인 zip이 만들어지며, 그 중에 max값을 찾는데
 # *는 언패킹 연산자로, 튜플을 언패킹하여 각 요소를 따로 출력하게 한다.
