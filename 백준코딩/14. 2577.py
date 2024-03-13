@@ -27,6 +27,8 @@ for j in range(10):
 b = int(input()) * int(input()) * int(input())
 for i in range(10):
     print(str(b).count(str(i)))
+
+
     
 # 피드백)
 # 그냥 input을 3번쓰면 띄어쓰기로 인풋할 수 있다.
