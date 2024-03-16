@@ -1,5 +1,4 @@
-# 2577
-a = int(input()) * int(input()) * int(input())
-print(a)
-for i in range(10):
-    print(str(a).count(str(i)))
+# 1152
+#  The Curious Case of Benjamin Button 
+sentence = ' '.join(input().split()).split()
+print(len(sentence))
