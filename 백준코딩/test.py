@@ -1,1 +1,2 @@
-print(len(' '.join(input().split()).split()))
+i = input()
+print(sum(map(int,str(i))))
